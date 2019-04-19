@@ -4,17 +4,20 @@
 ul {
   list-style-type: none;
   margin: 0;
-  height: 30px;
+  height: 50px;
   color: black;
   z-index: 99999;
-  position: fixed;
-  width: 50%;
+  position: relative;
+  width: 100%;
   background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 li {
   display: inline;
-  padding: 0px 40px 0px 15px;
+  padding: 0px 50px 0px 0px;
   font-family: freight-text-pro, serif;
   font-size: 1em;
 }
@@ -22,7 +25,6 @@ li {
 li a {
   text-decoration: none;
   position: relative;
-  top: 12%;
 }
 
 /*.nav-left {
@@ -66,7 +68,7 @@ li a {
         }
 
 .logo img {
-  width: 80%;
+  width: 75%;
   position: relative;
   margin: 0 0 0 20px;
 }  
@@ -74,15 +76,15 @@ li a {
 
 /*  ----------- HOME PAGE ----------- */
 
-    /*  ------ CATEGORIES ------ */
+    /*  ------ INFO ------ */
 
     .info p {
       font-family: freight-text-pro, serif;
-      font-size: 30px;
-      line-height: 34px;
+      font-size: 1.8vw;
+      line-height: 2.2vw;
       z-index: 30;
       position: absolute;
-      margin: 20px 140px 20px 20px;
+      margin: 20px 6vw 20px 20px;
       text-align: left;
     }
 
@@ -139,7 +141,18 @@ li a {
           color: white;
         /*  background-color: white;*/
           font-family: arialnarrow;
+          -webkit-animation: flicker 1s infinite;
         }
+
+        @-webkit-keyframes flicker
+          {
+          0% {opacity:0;}
+          19% {opacity:1;}
+          20% {opacity:.8;}
+          33% {opacity:0;}
+          50% {opacity:.5;}
+          90% {opacity:1;}
+          }
 
         /* selected link */
         .centered a:active {
@@ -206,7 +219,6 @@ body {
 .centered {
   position: absolute;
   text-align: center;
-  padding-top: 40px;
 }
 
 .centered img {
@@ -357,7 +369,6 @@ color: black; }
   li a {
     text-decoration: none;
     position: relative;
-    top: 15%;
   }
 
 }
