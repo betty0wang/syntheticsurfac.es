@@ -4,63 +4,158 @@
 ul {
   list-style-type: none;
   margin: 0;
-  padding: 10px;
-  background: white;
+  height: 30px;
   color: black;
   z-index: 99999;
   position: fixed;
   width: 50%;
+  background: white;
 }
 
 li {
   display: inline;
-  padding: 0px 16px 0px 0px;
+  padding: 0px 40px 0px 15px;
   font-family: freight-text-pro, serif;
+  font-size: 1em;
 }
 
 li a {
   text-decoration: none;
+  position: relative;
+  top: 12%;
+}
+
+/*.nav-left {
+  background: white;
+  height: 30px;
+}*/
+
+.nav-right {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly; 
+  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 /* unvisited link */
-a:link {
-  color: black;
-  text-decoration: none;
-}
+        .nav-right a:link {
+          color: black;
+          text-decoration: none;
+        }
 
-/* visited link */
-a:visited {
-  color: black;
-  text-decoration: none;
-}
+        /* visited link */
+        .nav-right a:visited {
+          color: black;
+          text-decoration: none;
+        }
 
-/* mouse over link */
-a:hover {
-  color: black;
-/*  background-color: white;*/
-  font-family: arialnarrow;
-}
+        /* mouse over link */
+        .nav-right a:hover {
+          color: black;
+        /*  background-color: white;*/
+          font-family: arialnarrow;
+        }
 
-/* selected link */
-a:active {
-  color: lightsalmon;
-  font-family: arialnarrow;
-}
+        /* selected link */
+        .nav-right a:active {
+          color: lightsalmon;
+          font-family: arialnarrow;
+        }
 
-
-
-
-
-
-
-/*li a:hover {
-  background-color: #555;
-  color: white;
-}
-*/
+.logo img {
+  width: 80%;
+  position: relative;
+  margin: 0 0 0 20px;
+}  
 
 
-/*  ----------- BODY ----------- */
+/*  ----------- HOME PAGE ----------- */
+
+    /*  ------ CATEGORIES ------ */
+
+    .info p {
+      font-family: freight-text-pro, serif;
+      font-size: 30px;
+      line-height: 34px;
+      z-index: 30;
+      position: absolute;
+      margin: 20px 140px 20px 20px;
+      text-align: left;
+    }
+
+
+    /*  ------ CATEGORIES ------ */
+
+        /* quick reset */
+        * {
+          margin: 0;
+          padding: 0;
+          border: 0;
+        }
+
+        /* relevant styles */
+        .img_wrap {
+          position: relative;
+          width: 50vw;
+        }
+
+        .img_title {
+          position: absolute;
+          padding-top: 40px;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          color: white;
+          visibility: hidden;
+          opacity: .1;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-family: arialnarrow;
+          font-size: 8em;
+
+          /* transition effect. not necessary */
+          transition: opacity .2s, visibility .2s;
+        }
+
+        /* unvisited link */
+        .centered a:link {
+          color: white;
+          text-decoration: none;
+        }
+
+        /* visited link */
+        .centered a:visited {
+          color: white;
+          text-decoration: none;
+        }
+
+        /* mouse over link */
+        .centered a:hover {
+          color: white;
+        /*  background-color: white;*/
+          font-family: arialnarrow;
+        }
+
+        /* selected link */
+        .centered a:active {
+          color: lightsalmon;
+          font-family: arialnarrow;
+        }
+
+        .img_wrap:hover .img_title {
+          visibility: visible;
+          opacity: 1;
+        }
+
+       
+
+
+/*  ----------- STRUCTURE ----------- */
 
 body {
   font-family: Arial;
@@ -111,6 +206,11 @@ body {
 .centered {
   position: absolute;
   text-align: center;
+  padding-top: 40px;
+}
+
+.centered img {
+  width:100%;
 }
 
 /*.centered img {
@@ -118,10 +218,9 @@ body {
   border-radius: 50%;
 }*/
 
-.logo img {
-  width: 100%;
-}  
 
+
+/*  ----------- PRODUCT PAGES ----------- */
 
 .product-images img {
   width: 30vw;
@@ -144,56 +243,7 @@ p {
 color: black; }
 
 
-/*HOME PAGE */
-
-
-/* quick reset */
-* {
-  margin: 0;
-  padding: 0;
-  border: 0;
-}
-
-/* relevant styles */
-.img_wrap {
-  position: relative;
-}
-
-.img_title {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  color: white;
-  visibility: hidden;
-  opacity: .1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: arialnarrow;
-  font-size: 8em;
-
-  /* transition effect. not necessary */
-  transition: opacity .2s, visibility .2s;
-}
-
-
-
-
-
-
-
-.img_wrap:hover .img_title {
-  visibility: visible;
-  opacity: 1;
-}
-
-
-
-
-
-
+/*  ----------- SLIDESHOW ----------- */
 
 * {box-sizing:border-box}
 
@@ -293,10 +343,43 @@ color: black; }
 
 
 
+/*  ----------- RESPONSIVE!!!!!  ----------- */
 
+@media screen and (max-width: 1350px) {
+  
+  li {
+    display: inline;
+    padding: 0px 20px 0px 15px;
+    font-family: freight-text-pro, serif;
+    font-size: .9em;
+  }
 
+  li a {
+    text-decoration: none;
+    position: relative;
+    top: 15%;
+  }
 
+}
 
+@media screen and (max-width: 1100px) {
+  
+  li {
+    display: inline;
+    padding: 0px 10px 0px 10px;
+    font-family: freight-text-pro, serif;
+    font-size: .8em;
+  }
+
+  .centered img {
+    width:100%;
+  }
+
+  .img-title {
+    font-size: 4em;
+  }          
+
+}
 
 
 
