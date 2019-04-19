@@ -1,3 +1,67 @@
+
+/*  ----------- NAV BAR ----------- */
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 10px;
+  background: white;
+  color: black;
+  z-index: 99999;
+  position: fixed;
+  width: 50%;
+}
+
+li {
+  display: inline;
+  padding: 0px 16px 0px 0px;
+  font-family: freight-text-pro, serif;
+}
+
+li a {
+  text-decoration: none;
+}
+
+/* unvisited link */
+a:link {
+  color: black;
+  text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+  color: black;
+/*  background-color: white;*/
+  font-family: arialnarrow;
+}
+
+/* selected link */
+a:active {
+  color: lightsalmon;
+  font-family: arialnarrow;
+}
+
+
+
+
+
+
+
+/*li a:hover {
+  background-color: #555;
+  color: white;
+}
+*/
+
+
+/*  ----------- BODY ----------- */
+
 body {
   font-family: Arial;
   color: white;
@@ -10,7 +74,7 @@ body {
   z-index: 1;
   top: 0;
   overflow-x: hidden;
-  padding-top: 20px;
+/*  padding-top: 20px;*/
 }
 
 .productL {
@@ -46,9 +110,6 @@ body {
 
 .centered {
   position: absolute;
-/*  top: 50%;
-  left: 50%;*/
-/*  transform: translate(-50%, -50%);*/
   text-align: center;
 }
 
@@ -57,21 +118,18 @@ body {
   border-radius: 50%;
 }*/
 
-.logo {
-      width: calc(50% - 20px);
-      font-family: freight-text-pro, serif;
-      font-weight: 600;
-      color: black;
-      top: 10px;
-      display: flex;
-        position: fixed;
-        margin:10px;
-        z-index: 9999;
-    }
+.logo img {
+  width: 100%;
+}  
+
 
 .product-images img {
   width: 30vw;
   padding: 2vh 0;
+}
+
+.mark-images img {
+  width: 50vw;
 }
 
 
@@ -86,7 +144,50 @@ p {
 color: black; }
 
 
+/*HOME PAGE */
 
+
+/* quick reset */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* relevant styles */
+.img_wrap {
+  position: relative;
+}
+
+.img_title {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: white;
+  visibility: hidden;
+  opacity: .1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: arialnarrow;
+  font-size: 8em;
+
+  /* transition effect. not necessary */
+  transition: opacity .2s, visibility .2s;
+}
+
+
+
+
+
+
+
+.img_wrap:hover .img_title {
+  visibility: visible;
+  opacity: 1;
+}
 
 
 
