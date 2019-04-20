@@ -3,23 +3,25 @@
 
 ul {
   list-style-type: none;
-  margin: 0;
-  height: 50px;
-  color: black;
-  z-index: 99999;
-  position: relative;
-  width: 100%;
-  background: white;
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
+/*  margin-block-start: 0em;
+  margin-block-end: 0em;
+  padding-inline-start: 0px;*/
+  justify-content: space-evenly; 
+  position: fixed;
+  z-index: 999;
+  background: white;
+  width: 50%;
 }
 
 li {
   display: inline;
-  padding: 0px 50px 0px 0px;
-  font-family: freight-text-pro, serif;
-  font-size: 1em;
+  padding: 20px 20px 20px 20px;
+/*  font-family: freight-text-pro, serif;*/
+ /* font-size: 1em;*/
 }
 
 li a {
@@ -27,50 +29,71 @@ li a {
   position: relative;
 }
 
-/*.nav-left {
-  background: white;
-  height: 30px;
-}*/
 
-.nav-right {
+.nav-container {
+  height: 50px;
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-evenly; 
+  //justify-content: space-evenly; 
   margin: auto;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
 }
 
+.space-evenly {
+  justify-content: space-evenly;
+}
+
+.nav {
+  font-family: freight-text-pro; serif;
+  font-size: 1vw;
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+  color: black;
+  padding-left: auto;
+  padding-right: auto;
+  line-height: 1em;
+  object-fit: contain;
+  text-decoration: none;
+  position: relative;
+}
+
+
+
+
+
+
 /* unvisited link */
-        .nav-right a:link {
+        .nav a:link {
           color: black;
           text-decoration: none;
         }
 
         /* visited link */
-        .nav-right a:visited {
+        .nav a:visited {
           color: black;
           text-decoration: none;
         }
 
         /* mouse over link */
-        .nav-right a:hover {
+        .nav a:hover {
           color: black;
         /*  background-color: white;*/
           font-family: arialnarrow;
         }
 
         /* selected link */
-        .nav-right a:active {
+        .nav a:active {
           color: lightsalmon;
           font-family: arialnarrow;
         }
 
 .logo img {
-  width: 75%;
+  width: 40%;
   position: relative;
-  margin: 0 0 0 20px;
+  margin: 10px 0 0 20px;
 }  
 
 
@@ -118,11 +141,19 @@ li a {
           align-items: center;
           justify-content: center;
           font-family: arialnarrow;
+          line-height: .9em;
           font-size: 8em;
 
           /* transition effect. not necessary */
           transition: opacity .2s, visibility .2s;
         }
+
+        .img_wrap:hover .img_title {
+          visibility: visible;
+          opacity: 1;
+        }
+
+
 
         /* unvisited link */
         .centered a:link {
@@ -137,7 +168,7 @@ li a {
         }
 
         /* mouse over link */
-        .centered a:hover {
+        .centered .img_wrap a:hover {
           color: white;
         /*  background-color: white;*/
           font-family: arialnarrow;
@@ -158,11 +189,6 @@ li a {
         .centered a:active {
           color: lightsalmon;
           font-family: arialnarrow;
-        }
-
-        .img_wrap:hover .img_title {
-          visibility: visible;
-          opacity: 1;
         }
 
        
@@ -235,8 +261,14 @@ body {
 /*  ----------- PRODUCT PAGES ----------- */
 
 .product-images img {
-  width: 30vw;
+  width: 35vw;
   padding: 2vh 0;
+  margin: 2vh 0;
+}
+
+.product-images img:hover {
+  background: transparent;
+    border: 1px solid black;
 }
 
 .mark-images img {
@@ -250,9 +282,36 @@ body {
 }
 
 
+.productinfo {
+
+}
+
+.product_wrap .productinfo {
+    position: relative;
+    visibility: hidden;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    font-family: arialnarrow;
+    top: 0px;
+    font-size: 1em;
+    color: black;
+    }
+
+.product_wrap:hover .productinfo {
+          visibility: visible;
+          opacity: 1;
+        }
+
+
+
+
+
+
 
 p { 
-color: black; }
+color: black; 
+}
 
 
 /*  ----------- SLIDESHOW ----------- */
@@ -361,9 +420,9 @@ color: black; }
   
   li {
     display: inline;
-    padding: 0px 20px 0px 15px;
+    padding: 15px 20px 15px 15px;
     font-family: freight-text-pro, serif;
-    font-size: .9em;
+    font-size: 1.2em;
   }
 
   li a {
@@ -377,9 +436,9 @@ color: black; }
   
   li {
     display: inline;
-    padding: 0px 10px 0px 10px;
+    padding: 15px 10px 15px 10px;
     font-family: freight-text-pro, serif;
-    font-size: .8em;
+    font-size: 1.5em;
   }
 
   .centered img {
