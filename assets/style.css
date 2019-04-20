@@ -271,8 +271,39 @@ body {
 
 .product-images img:hover {
   background: transparent;
-    border: 1px solid black;
+  border: 1px solid black;
 }
+
+.selected-product {
+  position:relative;
+  background: white; 
+  opacity: 0.8; 
+  border: 1px solid black;
+  width: 100%;
+  pointer-events: none;
+}
+
+.selectedproductname {
+    overflow: hidden;
+    position: absolute;
+    font-family: arialnarrow;
+    font-size: 1em;
+    color: black;
+    top: 15px;
+    right: 15px;
+    text-align: right;
+}
+
+.selectedproductnumber {
+    overflow: hidden;
+    position: absolute;
+    font-family: arialnarrow;
+    font-size: 1em;
+    color: black;
+    top: 15px;
+    left: 15px;
+    }
+
 
 .mark-images img {
   width: 50vw;
@@ -284,9 +315,14 @@ body {
 
 .catalog-images img {
   width: 20vw;
-  padding: 2vh 0;
+  padding: 1vh 0;
+  margin: 1vh 0;
 }
 
+.catalog-images img:hover {
+  background: transparent;
+  border: 1px solid black;
+}
 
 .product_wrap {
 position: relative;
@@ -312,6 +348,7 @@ position: relative;
     color: black;
     top: 15px;
     right: 15px;
+    text-align: right;
     }
 
 .product_wrap:hover .productnumber {
@@ -342,6 +379,22 @@ color: black;
       color: black;
     }
 
+
+
+.copy h2 {
+  font-family: arialnarrow;
+      font-size: 1.8vw;
+      line-height: 2.2vw;
+      z-index: 30;
+      position: absolute;
+      margin: 20px 2vw 20px 20px;
+      text-align: left;
+      color: black;
+  right: 0;
+  z-index: 92499;
+}
+
+
 .copy p {
       font-family: freight-text-pro, serif;
       font-size: 1vw;
@@ -351,6 +404,14 @@ color: black;
       text-align: left;
       width: 50%;
     }
+
+
+
+
+
+
+
+
 
 /*  ----------- SLIDESHOW ----------- */
 
@@ -475,7 +536,6 @@ color: black;
     display: inline;
     padding: 15px 20px 15px 15px;
     font-family: freight-text-pro, serif;
-    font-size: 1.2em;
   }
 
   li a {
@@ -491,7 +551,6 @@ color: black;
     display: inline;
     padding: 15px 10px 15px 10px;
     font-family: freight-text-pro, serif;
-    font-size: 1.5em;
   }
 
   .centered img {
