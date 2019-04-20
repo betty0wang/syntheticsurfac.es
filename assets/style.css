@@ -282,20 +282,19 @@ body {
 }
 
 
-.productinfo {
-
+.product_wrap {
+position: relative;
 }
 
-.product_wrap .productinfo {
-    position: relative;
+.productinfo {
+    overflow: hidden;
+    position: absolute;
     visibility: hidden;
-    display: flex;
-    align-items: left;
-    justify-content: left;
     font-family: arialnarrow;
-    top: 0px;
     font-size: 1em;
     color: black;
+    top: 15px;
+    left: 15px;
     }
 
 .product_wrap:hover .productinfo {
@@ -448,6 +447,17 @@ color: black;
   .img-title {
     font-size: 4em;
   }          
+
+.productinfo {
+    overflow: hidden;
+    position: absolute;
+    visibility: hidden;
+    font-family: arialnarrow;
+    font-size: 1em;
+    color: black;
+    top: 30px;
+    left: 15px;
+    }
 
 }
 
