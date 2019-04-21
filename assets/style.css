@@ -15,11 +15,12 @@ ul {
   z-index: 999;
   background: white;
   width: 50%;
+  border-bottom: 1px solid black;
 }
 
 li {
   display: inline;
-  padding: 20px;
+  padding: 10px 0 9px 0;
 /*  font-family: freight-text-pro, serif;*/
  /* font-size: 1em;*/
 }
@@ -31,14 +32,16 @@ li a {
 
 
 .nav-container {
-  height: 50px;
+  height: 35px;
   display: flex;
   flex-flow: row nowrap;
+  background: white;
   //justify-content: space-evenly; 
   margin: auto;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  z-index: 99999;
 }
 
 .space-evenly {
@@ -58,8 +61,48 @@ li a {
   object-fit: contain;
   text-decoration: none;
   position: relative;
+  height: 35px;
 }
 
+.leftnav {
+  position: fixed;
+  font-family: freight-text-pro; serif;
+  font-size: 1vw;
+  z-index: 99999;
+  right: 50%;
+  padding: 0;
+  margin: 10px 16px 0 0;
+  color: black;
+  line-height: 1em;
+}
+
+.leftnav a{
+  text-decoration: none;
+}
+
+.leftnav a:link {
+  color: black;
+  text-decoration: none;
+}
+
+/* visited link */
+.leftnav a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+/* mouse over link */
+.leftnav a:hover {
+  color: black;
+  /*  background-color: white;*/
+  font-family: arialnarrow;
+}
+
+/* selected link */
+.leftnav a:active {
+  color: lightsalmon;
+  font-family: arialnarrow;
+}
 
 
 
@@ -90,25 +133,51 @@ li a {
           font-family: arialnarrow;
         }
 
+.logo {
+  position: fixed;
+  z-index: 2000;
+  background: #F0f0f0;
+  width: 50%;
+  height:36px;
+  border-bottom: 1px solid black;
+}
+
 .logo img {
-  width: 40%;
+  width: 20%;
   position: relative;
-  margin: 10px 0 0 20px;
+  margin: 8px 0 0 10px;
   z-index: 9999;
 }  
 
 
 /*  ----------- HOME PAGE ----------- */
+    
+    .home-img img {
+      position: relative;
+      width: 100%
+    }
 
+    .home-img {
+      margin-top: 20px;
+    }
+
+    
     /*  ------ INFO ------ */
 
-    .info p {
+    h4 {
+      color: black;
+      text-transform: uppercase;
+      margin: 2vh 0 0 14px;
+      font-family: arialnarrow;
+    }
+
+    #about p {
       font-family: freight-text-pro, serif;
       font-size: 1.8vw;
       line-height: 2.2vw;
       z-index: 30;
       position: absolute;
-      margin: 20px 6vw 20px 20px;
+      margin: 1vw 6vw 20px 2vw;
       text-align: left;
     }
 
@@ -543,7 +612,11 @@ color: black;
     position: relative;
   }
 
+ .home-img {
+      margin-top: 40px;
+    }
 }
+
 
 @media screen and (max-width: 1100px) {
   
