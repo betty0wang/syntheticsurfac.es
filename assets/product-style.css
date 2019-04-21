@@ -69,7 +69,7 @@ li a {
   font-family: arial;
   font-size: 0.8em;
   z-index: 99999;
-  right: 50%;
+  right: 35%;
   padding: 0;
   margin: 13px 0 0 0;
   color: black;
@@ -139,7 +139,7 @@ li a {
   position: fixed;
   z-index: 2000;
   background: #F0f0f0;
-  width: 50%;
+  width: 65%;
   height:36px;
   border-bottom: 1px solid black;
 }
@@ -528,7 +528,7 @@ color: black;
   width: auto;
   margin-top: -22px;
   padding: 16px;
-  color: white;
+  color: black;
   font-weight: bold;
   font-size: 18px;
   transition: 0.2s ease;
@@ -544,10 +544,10 @@ color: black;
   width: auto;
   margin-top: -22px;
   padding: 16px;
-  color: white;
+  color: black;
   font-weight: bold;
   font-size: 18px;
-  transition: 0.6s ease;
+/*  transition: 0.6s ease;*/
   border-radius: 0 0;
   user-select: none;
 }
@@ -556,7 +556,7 @@ color: black;
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
     color: yellow;
-    font-size: 2em;
+/*    font-size: 2em;*/
     background: white;
 }
 
@@ -589,16 +589,16 @@ color: black;
   background-color: white;
   border-radius: 50%;
   display: inline-block;
-  transition: background-color 0.6s ease;
+/*  transition: background-color 0.6s ease;*/
   bottom: 20px;
 }
 
 .active, .dot:hover {
-  background-color: yellow;
+  background-color: black;
 }
 
 /* Fading animation */
-.fade {
+/*.fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
   animation-name: fade;
@@ -614,7 +614,7 @@ color: black;
   from {opacity: .4} 
   to {opacity: 1}
 }
-
+*/
 
 
 
@@ -725,6 +725,7 @@ color: black;
 
 
 }
+
 
 
 
