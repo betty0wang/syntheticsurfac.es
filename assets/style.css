@@ -20,7 +20,7 @@ ul {
 
 li {
   display: inline;
-  padding: 10px 0 9px 0;
+  padding: 11px 0 9px 0;
 /*  font-family: freight-text-pro, serif;*/
  /* font-size: 1em;*/
 }
@@ -66,18 +66,20 @@ li a {
 
 .leftnav {
   position: fixed;
-  font-family: freight-text-pro; serif;
-  font-size: 1vw;
+  font-family: arial;
+  font-size: 0.8em;
   z-index: 99999;
   right: 50%;
   padding: 0;
-  margin: 10px 16px 0 0;
+  margin: 13px 0 0 0;
   color: black;
   line-height: 1em;
 }
 
 .leftnav a{
   text-decoration: none;
+  margin: 0px 20px 0 20px;
+  text-transform: uppercase;
 }
 
 .leftnav a:link {
@@ -175,10 +177,31 @@ li a {
       font-family: freight-text-pro, serif;
       font-size: 1.8vw;
       line-height: 2.2vw;
-      z-index: 30;
-      position: absolute;
       margin: 1vw 6vw 20px 2vw;
       text-align: left;
+    }
+
+    #process p {
+      font-family: freight-text-pro, serif;
+      font-size: 1.8vw;
+      line-height: 2.2vw;
+      margin: 1vw 6vw 20px 2vw;
+      text-align: left;
+    }
+
+    #process img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    hr {
+      border: 0;
+      clear:both;
+      display:block;
+      width: 100%;               
+      background-color:black;
+      height: 1px;
     }
 
 
@@ -222,8 +245,6 @@ li a {
           visibility: visible;
           opacity: 1;
         }
-
-
 
         /* unvisited link */
         .centered a:link {
@@ -619,7 +640,7 @@ color: black;
 
 
  .home-img {
-      margin-top: 40px;
+      margin-top: 30px;
     }
 }
 
@@ -663,6 +684,9 @@ color: black;
     font-family: freight-text-pro, serif;
   }
 
+  .home-img {
+      margin-top: 30px;
+    }
 
   .centered img {
     width:100%;
@@ -684,10 +708,16 @@ color: black;
 
 #about p {
       font-family: freight-text-pro, serif;
-      font-size: 3vw;
-      line-height: 3.8vw;
-      z-index: 30;
-      position: absolute;
+      font-size: 2.5vw;
+      line-height: 3vw;
+      margin: 1vw 6vw 20px 2vw;
+      text-align: left;
+    }
+
+#process p {
+      font-family: freight-text-pro, serif;
+      font-size: 2.5vw;
+      line-height: 3vw;
       margin: 1vw 6vw 20px 2vw;
       text-align: left;
     }
