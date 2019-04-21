@@ -200,6 +200,25 @@ li a {
       background-color:black;
       height: 1px;
     }
+    
+
+.hover a {
+  position: relative;
+}
+
+
+.hover a span { 
+  z-index:500;
+}
+
+.hover a:hover span { 
+/*  display:block;*/
+  z-index: 99999;
+}
+
+
+
+
 
 
     /*  ------ CATEGORIES ------ */
