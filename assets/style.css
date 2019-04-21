@@ -200,7 +200,7 @@ li a {
       background-color:black;
       height: 1px;
     }
-    
+
 
 .hover a {
   position: relative;
@@ -361,15 +361,8 @@ body {
 }
 
 .mark-images {
-  margin: 60px 0 0 0;
+  margin: 50px 0 0 0;
 }
-
-/*.centered img {
-  width: 150px;
-  border-radius: 50%;
-}*/
-
-
 
 
 .hover a {

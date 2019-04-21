@@ -457,6 +457,11 @@ p {
 color: black; 
 }
 
+.copy {
+  height: 50px;
+  position: relative;
+  margin: 0 0 20px 0;
+}
 
 .copy h1 {
       font-family: arial;
@@ -470,9 +475,8 @@ color: black;
     }
 
 
-
 .copy h2 {
-  font-family: arialnarrow;
+      font-family: arialnarrow;
       font-size: 1.8vw;
       line-height: 2.2vw;
       z-index: 30;
@@ -480,27 +484,70 @@ color: black;
       margin: 20px 2vw 20px 20px;
       text-align: left;
       color: black;
-  right: 0;
-  z-index: 92499;
+      right: 0;
+      z-index: 92499;
 }
 
 
-.copy p {
+.info {
+  position: relative;
+  display: block;
+  width: 100%;
+  z-index: 99999;
+  height: 10vw;
+  margin: 0 0 40px 0;
+}
+
+.info p {
       font-family: freight-text-pro, serif;
       font-size: 1vw;
       line-height: 1.2vw;
       position: absolute;
-      margin: 50px 3vw 8vh 20px;
       text-align: left;
       width: 50%;
+      display: block;
+      bottom: 0;
+      margin: 0 0 0 20px;
     }
 
 
 
+.info .shopbutton {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.shopbutton {
+  background-color: transparent; 
+  color: black; 
+  border: 1px solid black;
+  padding: 10px 40px;
+  text-align: center;
+  text-decoration: none;
+/*  display: inline-block;*/
+  font-size: 16px;
+  margin: 0 2vw 0 0;
+  -webkit-transition-duration: 0.2s; /* Safari */
+  transition-duration: 0.2s;
+  cursor: pointer;
+}
+
+.shopbutton:hover {
+  background-color: black;
+  color: white;
+}
 
 
-
-
+.footer {
+  overflow: hidden;
+  background-color: black;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  margin-top: 20px;
+  height: 40px;
+}
 
 
 /*  ----------- SLIDESHOW ----------- */
@@ -645,11 +692,11 @@ color: black;
   line-height: 1em;
 }
 
-
  .home-img {
       margin-top: 30px;
     }
 }
+
 
 
 @media screen and (max-width: 1100px) {
