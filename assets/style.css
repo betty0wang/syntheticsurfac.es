@@ -107,9 +107,6 @@ li a {
 }
 
 
-
-
-
 /* unvisited link */
         .nav a:link {
           color: black;
@@ -344,10 +341,39 @@ body {
   width:100%;
 }
 
+.mark-images {
+  margin: 60px 0 0 0;
+}
+
 /*.centered img {
   width: 150px;
   border-radius: 50%;
 }*/
+
+
+
+
+.hover a {
+  position: relative;
+  top:-50%;
+}
+
+
+.hover a span { 
+  display:none; 
+  z-index:500;
+  top:-500%;
+}
+
+.hover a:hover span { 
+  display:block;
+}
+
+
+
+
+
+
 
 
 
